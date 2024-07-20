@@ -1,0 +1,4 @@
+mapper/user/UsersMapper.class
+model/user/Users.class
+model/user/UserAuths.class
+mapper/user/UserAuthsMapper.class

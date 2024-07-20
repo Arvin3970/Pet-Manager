@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+
+    <interactiveMode>false</interactiveMode>
+
+    <mirrors>
+<!--        <mirror>-->
+<!--            <id>central</id>-->
+<!--            <url>https://repo.maven.apache.org/maven2</url>-->
+<!--            <mirrorOf>central</mirrorOf>-->
+<!--        </mirror>-->
+
+        <!-- 阿里云镜像仓库 -->
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </mirror>
+
+        <!-- 华为云镜像仓库 -->
+        <mirror>
+            <id>huaweicloud</id>
+            <url>https://mirrors.huaweicloud.com/repository/maven/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+
+        <!-- 网易云镜像仓库 -->
+        <mirror>
+            <id>netease</id>
+            <url>https://maven.163.com/repository/maven-public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+
+        <!-- 清华大学镜像仓库 -->
+        <mirror>
+            <id>tsinghua</id>
+            <url>https://mirrors.tuna.tsinghua.edu.cn/maven/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+
+        <!-- 华中科技大学镜像仓库 -->
+        <mirror>
+            <id>huazhi</id>
+            <url>https://mirrors.huaweicloud.com/repository/maven-public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+
+        <!-- 中国科学技术大学镜像仓库 -->
+        <mirror>
+            <id>ustc</id>
+            <url>http://mirrors.ustc.edu.cn/maven/maven2/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+
+        <!-- 百度镜像仓库 -->
+        <mirror>
+            <id>baidu</id>
+            <url>https://maven-bd-local-1.services.baidu.com/repository/maven-public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile>
+            <id>default-jdk</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <maven.compiler.source>18</maven.compiler.source>
+                <maven.compiler.target>18</maven.compiler.target>
+                <maven.compiler.compilerVersion>18</maven.compiler.compilerVersion>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
